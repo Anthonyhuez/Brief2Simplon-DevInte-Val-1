@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form action="/" method="POST">
+
+        <fieldset>
+            
+            <label for="first_name"><strong>Votre Prénom*:</strong></label>
+            <input id="first_name" name="first_name" required><br>
+        
+            <label for="name"><strong>Votre Nom*:</strong></label>
+            <input id="name" name="name" required><br>
+
+            <label for="age"><strong>Votre Age*:</strong></label>
+            <input type="number" id="age" name="age" min="0" max="99" step="1"><br>
+
+            <label for="sex"><strong>Votre Sexe*:</strong></label>
+            <select id="sex" name="sex">
+                <option value="man">M</option>
+                <option value="woman">F</option>
+            </select><br>
+
+            <label for="email"><strong>Votre email:</strong></label>
+            <input type="email" id="email" name="email" placeholder="your-email@site.com" required><br>
+
+            <label for="adress"><strong>Votre Adresse*:</strong></label>
+            <input id="adress" name="adress" required><br>
+
+            <label><strong>Code Postale*:</strong></label>
+            <input type="text" pattern="[0-9]{5}" title="Five digit postal code"/><br>
+
+            <label for="city"><strong>Ville*:</strong></label>
+            <input id="city" name="city" required><br>
+
+            <label for="work"><strong>Votre Travail*:</strong></label>
+            <select id="work" name="work">
+                <option value="real estate agent">Agent immobilier</option>
+                <option value="site manager">Chef de chantier</option>
+                <option value="nurse">Infirmier</option>
+                <option value="psychologist">Psychologue</option>
+            </select><br>
+
+            <input type="radio" value="french" name="nationality" id="french">
+            <label for="french">Française</label>
+            <input type="radio" value="german" name="nationality" id="german">
+            <label for="german">Allemande</label>
+            <input type="radio" value="russian" name="nationality" id="russian">
+            <label for="russian">Russe</label>
+            <input type="radio" value="american" name="nationality" id="american">
+            <label for="american">Americaine</label><br>
+
+            <label><code><strong>Date de naissance:</strong></code></label>
+            <input type="datetime-local"><br>
+
+            <label for="country"><strong>Votre pays de naissance*:</strong></label>
+            <input id="country" name="country" required><br>
+
+            <label for="security_code"><strong>Numéro de sécurité social*:</strong></label>
+            <input id="security_code" name="security_code" type="text" pattern="[0-9]{13}" title="thirteen digit security code"/><br>
+
+            <label for="passport"><strong>Numéro de passeport*:</strong></label>
+            <input id="passport" name="passport" type="text" pattern="[0-9]{9}" title="nine digit passport code"/><br>
+
+            <label><code><strong>Date de délivrance du passeport:</strong></code></label>
+            <input type="datetime-local"><br>
+
+            <label><code><strong>Date de validité du passeport:</strong></code></label>
+            <input type="datetime-local"><br>
+
+            <button type="submit">Envoyer</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
